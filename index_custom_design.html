@@ -1,0 +1,54 @@
+<!doctype html>
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Merkaba Hotel</title>
+		<script type="text/javascript" src="bower_components/jquery/jquery.min.js"></script>
+		<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		<script src="https://rawgithub.com/jquery/jquery-ui/1-10-stable/ui/jquery.ui.datepicker.js"></script>
+		<script src="http://code.jquery.com/mobile/git/jquery.mobile-git.js"></script>
+		<script src="https://rawgithub.com/arschmitz/jquery-mobile-datepicker-wrapper/master/jquery.mobile.datepicker.js"></script>
+
+		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+		<link rel="stylesheet"  href="http://code.jquery.com/mobile/git/jquery.mobile-git.css" />
+		<link rel="stylesheet" href="https://rawgithub.com/arschmitz/jquery-mobile-datepicker-wrapper/master/jquery.mobile.datepicker.css" />
+		<link rel="stylesheet" type="text/css" href="css/styles.css"/>
+    </head>
+    <body>
+	<div class="flex-conteiner">
+	    <div class="header flex-item">
+			<h1 class="name-of-hotel">Отель Меркаба</h1>
+			<table class="contacts">
+				<tr><td><span>4ая Советская, 13</span></td></tr>
+				<tr><td><span class="phone">+7 921 300 16 46</span></td></tr>
+			</table>
+	    </div>
+	    <div class="wubook-form flex-item">
+			<div class="container">
+				<div class="row">
+					<h1>Онлайн бронирование</h1>
+					<label>заезд</label>
+					<input type="text" id="date-input" data-inline="true" data-role="date" style="display: none">
+				</div>
+				<div class="row">
+					<fieldset data-role="controlgroup" data-type="horizontal">
+						<select name="nights" class="nights" data-inline="true">
+							<option value="1">1 ночь</option><option value="2">2 ночи</option><option value="3" selected>3 ночи</option><option value="4">4 ночи</option>
+						</select>
+						<button type="button" class="btn btn-success">Забронировать</button>
+					</fieldset>
+				</div>
+				<script src="https://wubook.net/js/wblib.jgz"></script>
+				<script>
+					//WuBook= new _WuBook(1461990999);
+					// Then, if you want to open the booking engine using Arrival Date= 21/12 and 3 nights:
+					//WuBook.open({'dfrom': 21/12/2021, 'nights': 3});
+				</script>
+			</div>
+	    </div>
+	    <div class="footer flex-item"></div>
+	</div>
+    </body>
+</html>
