@@ -1,0 +1,70 @@
+@text-size-big: 2.5em;
+@text-size-middle: 1.2em;
+@text-size-small: 1em;
+
+body {
+  font-family: Arial;
+  .flex-conteiner {
+    height: 100vh;
+  }
+  .flex-item {
+    width: 100%;
+    padding: 0 20px;
+    text-align: center;
+  }
+  .header {
+    height: 140px;
+    background-color: #ECBE16;
+    color: #fff;
+    overflow: hidden;
+    .name-of-hotel {
+      font-family: Impact, Charcoal, sans-serif;
+      font-size: @text-size-big;
+    }
+    .contacts {
+      display: inline;
+      font-size: @text-size-middle;
+      //margin-bottom: 20px;
+    }
+    -webkit-box-shadow: 0px 0px 6px 2px #A0A0A0;
+    -moz-box-shadow: 0px 0px 6px 2px #A0A0A0;
+    box-shadow: 0px 0px 6px 2px #A0A0A0;
+  }
+  .wubook-form {
+    .container {
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+    }
+    h1 {
+      font-size: @text-size-middle;
+    }
+    select {
+      float: left;
+      width: 60px;
+      height: 60px;
+    }
+    button {
+      font-size: @text-size-small;
+      font-weight: normal;
+    }
+    .btn-success, .btn-success:hover, .btn-success:focus {
+      color: #fff;
+      background-color: #5cb85c;
+      border-color: #4cae4c;
+    }
+    label {
+      font-weight: bold;
+    }
+  }
+  .footer {
+  }
+}
+
+/****** mobile styles *****/
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+  .wubook-form {
+
+  }
+}
